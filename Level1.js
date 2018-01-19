@@ -45,12 +45,12 @@ var Level1 = {
 			powerup = game.add.audio('powerup');
 			pipeSound = game.add.audio('pipeSound');
 			
-			death.volume = 0.5;
-			beep.volume = 0.5;
-			stomp.volume = 0.5;
-			jump.volume = 0.5;
-			powerup.volume = 0.5;
-			pipeSound.volume = 0.5;
+			death.volume = 0.3;
+			beep.volume = 0.3;
+			stomp.volume = 0.3;
+			jump.volume = 0.3;
+			powerup.volume = 0.3;
+			pipeSound.volume = 0.3;
 
 			
 
