@@ -44,6 +44,13 @@ var Level1 = {
 			spawn = game.add.audio('spawn');
 			powerup = game.add.audio('powerup');
 			pipeSound = game.add.audio('pipeSound');
+			
+			death.volume = 0.5;
+			beep.volume = 0.5;
+			stomp.volume = 0.5;
+			jump.volume = 0.5;
+			powerup.volume = 0.5;
+			pipeSound.volume = 0.5;
 
 			
 
