@@ -46,6 +46,13 @@ var Level2 = {
 			spawn = game.add.audio('spawn');
 			powerup = game.add.audio('powerup');
 			pipeSound = game.add.audio('pipeSound');
+		
+			death.volume = 0.3;
+			beep.volume = 0.3;
+			stomp.volume = 0.3;
+			jump.volume = 0.3;
+			powerup.volume = 0.3;
+			pipeSound.volume = 0.3;
 			
 
 			Phaser.Canvas.setImageRenderingCrisp(game.canvas);
