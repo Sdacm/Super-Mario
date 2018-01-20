@@ -2,6 +2,7 @@ var Menu = {
 	
 	preload: function() {
 		
+		menutheme = this.load.audio('menutheme' , 'audio/menu-theme.mp3');
 		this.load.audio('endtheme' , 'audio/Dogsong.mp3');
 		game.load.image('lvl1', 'assets/lvl1.png', 200,200);
 		game.load.image('lvl2', 'assets/lvl2.png', 200,200);
@@ -19,11 +20,13 @@ var Menu = {
 		game.scale.pageAlignVertically = true;
 		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 		game.physics.startSystem(Phaser.Physics.ARCADE);
+		menutheme.play();
 
 		var bg = game.add.image(-1300,20, 'background');
 
 		button1 = game.add.button(100,1750, "lvl1", click1 , this, function(){});
 		button2 = game.add.button(1000,1750, "lvl2", click2, this, function(){});
+		
 
 		//game.state.start('Level1');
 		function click1 () {
